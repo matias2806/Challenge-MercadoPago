@@ -10,7 +10,8 @@ import Foundation
 final class HomePresenter: ObservableObject {
     @Published var vehicles: [DeportiveCars] = []
     @Published var isLoading = false
-    @Published var error: String?
+    @Published var isEmpty = true
+    @Published var error: String? = nil
 
     private let vehicleService: VehicleServiceProtocol
 
@@ -21,12 +22,18 @@ final class HomePresenter: ObservableObject {
     
     func fetchVehicles() {
         isLoading = true
+        isEmpty = false
         vehicleService.fetchVehicles { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {
                 case .success(let vehicles):
-                    self?.vehicles = vehicles
+                    self?.error = nil
+                    if vehicles.isEmpty {
+                        self?.isEmpty = true
+                    } else {
+                        self?.vehicles = vehicles
+                    }
                 case .failure(let error):
                     self?.error = error.localizedDescription
                 }

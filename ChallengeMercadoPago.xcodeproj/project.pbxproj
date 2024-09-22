@@ -14,6 +14,7 @@
 		0A21158B2C9F366A00A64225 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21158A2C9F366A00A64225 /* ProductResponse.swift */; };
 		0A21158F2C9F90C000A64225 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21158E2C9F90C000A64225 /* HomePresenter.swift */; };
 		0A2115912C9F919700A64225 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2115902C9F919700A64225 /* VehicleService.swift */; };
+		0A54E2272CA0AE3E005CE2D4 /* ListStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E2262CA0AE3E005CE2D4 /* ListStateView.swift */; };
 		0A558E5D2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558E5C2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift */; };
 		0A558E5F2C9E10BE0019140C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558E5E2C9E10BE0019140C /* ContentView.swift */; };
 		0A558E612C9E10C10019140C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A558E602C9E10C10019140C /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		0A21158A2C9F366A00A64225 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		0A21158E2C9F90C000A64225 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		0A2115902C9F919700A64225 /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
+		0A54E2262CA0AE3E005CE2D4 /* ListStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStateView.swift; sourceTree = "<group>"; };
 		0A558E592C9E10BE0019140C /* ChallengeMercadoPago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMercadoPago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A558E5C2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMercadoPagoApp.swift; sourceTree = "<group>"; };
 		0A558E5E2C9E10BE0019140C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		0A54E2252CA0AE27005CE2D4 /* ListStateView */ = {
+			isa = PBXGroup;
+			children = (
+				0A54E2262CA0AE3E005CE2D4 /* ListStateView.swift */,
+			);
+			path = ListStateView;
+			sourceTree = "<group>";
+		};
 		0A558E502C9E10BE0019140C = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		0A558E5B2C9E10BE0019140C /* ChallengeMercadoPago */ = {
 			isa = PBXGroup;
 			children = (
+				0A54E2252CA0AE27005CE2D4 /* ListStateView */,
 				0A21158D2C9F904B00A64225 /* Detail */,
 				0A21158C2C9F903700A64225 /* Home */,
 				0A2115882C9F364B00A64225 /* Networking */,
@@ -321,6 +332,7 @@
 				0A2115872C9F320100A64225 /* ProductDetailView.swift in Sources */,
 				0A21158F2C9F90C000A64225 /* HomePresenter.swift in Sources */,
 				0A558E5F2C9E10BE0019140C /* ContentView.swift in Sources */,
+				0A54E2272CA0AE3E005CE2D4 /* ListStateView.swift in Sources */,
 				0A558E5D2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,38 +30,10 @@ struct HomeView: View {
                 .cornerRadius(10)
                 List {
                     if presenter.error != nil {
-                        VStack {
-                            Image(systemName: "exclamationmark.circle")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 80, height: 80)
-                            Text("Lo sentimos, ocurrió un problema inesperado")
-                                .font(.title)
-                                .padding()
-                            Text("Inténtalo nuevamente más tarde")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                        }
+                        ListStateView(state: .errorService)
                     } else if presenter.isEmpty {
-                        VStack {
-                            Image(systemName: "magnifyingglass")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 80, height: 80)
-                            Text("No se encontraron resultados")
-                                .font(.title)
-                                .padding()
-                            Text("Intenta con otra búsqueda")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                        }
-                        .opacity(presenter.vehicles.isEmpty ? 1 : 0)
-                    }
-                    else {
+                        ListStateView(state: .emptyList)
+                    } else {
                         ForEach(presenter.vehicles.filter { product in
                             searchText.isEmpty || product.title.lowercased().contains(searchText.lowercased())
                         }) { product in

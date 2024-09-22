@@ -7,43 +7,62 @@
 
 import SwiftUI
 
-//struct ListStateViewModifier: ViewModifier {
-//    
-//    let title: String
-//    let subtitle: String
-//    let image: Image
-//    
-//    func body<Content: View & EmptyViewProtocol>(content: Content) -> some View {
-//            content
-//                .overlay(
-//                    VStack {
-//                        image
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 150)
-//                        Text(title)
-//                            .font(.title)
-//                            .fontWeight(.bold)
-//                            .padding(.top)
-//                        Text(subtitle)
-//                            .font(.subheadline)
-//                            .foregroundColor(.gray)
-//                            .multilineTextAlignment(.center)
-//                            .padding()
-//                    }
-//                    .opacity(content.isEmpty ? 1 : 0) // Mostrar la vista de estado vacío solo si la lista está vacía
-//                )
-//        }
-//}
-//
-//extension View {
-//    func listStateView(title: String, subtitle: String, image: Image) -> some View {
-//        modifier(ListStateViewModifier(title: title, subtitle: subtitle, image: image))
-//    }
-//}
+enum ListStateEnum {
+    case errorService
+    case emptyList
+    
+    var image: String {
+        switch self {
+        case .errorService:
+            return "exclamationmark.circle"
+        case .emptyList:
+            return "magnifyingglass"
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .errorService:
+            return "Lo sentimos, ocurrió un error del servicio"
+        case .emptyList:
+            return "Lo sentimos, No pudimos encontrar resultados"
+        }
+    }
+    
+    var subtitle: String {
+        switch self {
+        case .errorService:
+            return "Si el problema persiste contactate con Atención al cliente"
+        case .emptyList:
+            return "Intenta en unos minutos"
+        }
+    }
+}
 
-//#Preview {
-//    ListStateView(title: "Lo sentimos",
-//                  subtitle: "No pudimos encontrar resultados. Vuelve a intentarlo en unos minutos.",
-//                  image: Image("mercadopago_logo"))
-//}
+struct ListStateView: View {
+    let state: ListStateEnum
+    
+    var body: some View {
+        VStack {
+            Image(systemName: state.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80, height: 80)
+                .padding(.top, 20)
+            Text(state.title)
+                .font(.title)
+                .padding()
+                .multilineTextAlignment(.center)
+            Text(state.subtitle)
+                .font(.subheadline)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+                .padding()
+        }
+        .frame(maxWidth: .infinity, alignment: .center)
+    }
+}
+
+#Preview {
+    ListStateView(state: .emptyList)
+}

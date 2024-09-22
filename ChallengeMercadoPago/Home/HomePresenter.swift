@@ -20,7 +20,7 @@ final class HomePresenter: ObservableObject {
         fetchVehicles()
     }
     
-    func fetchVehicles() {
+    func fetchVehicles(searchText: String = "") {
         isLoading = true
         isEmpty = false
         vehicleService.fetchVehicles { [weak self] result in
@@ -32,7 +32,13 @@ final class HomePresenter: ObservableObject {
                     if vehicles.isEmpty {
                         self?.isEmpty = true
                     } else {
-                        self?.vehicles = vehicles
+                        if searchText != "" {
+                            self?.vehicles = vehicles.filter { vehicle in
+                                vehicle.title.lowercased().contains(searchText.lowercased())
+                            }
+                        } else {
+                            self?.vehicles = vehicles
+                        }
                     }
                 case .failure(let error):
                     self?.error = error.localizedDescription

@@ -19,8 +19,7 @@ struct HomeView: View {
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                     Button(action: {
-                        // TODO: Armar y preparar la función de búsqueda en el presenter algo asi..
-//                        presenter.fetchVehicles(searchText: searchText)
+                       presenter.fetchVehicles(searchText: searchText)
                     }) {
                         Image(systemName: "magnifyingglass")
                     }

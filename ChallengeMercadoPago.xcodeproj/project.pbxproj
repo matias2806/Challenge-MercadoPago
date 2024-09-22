@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2115802C9F286400A64225 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0A21157F2C9F286400A64225 /* Alamofire */; };
+		0A2115822C9F286400A64225 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2115812C9F286400A64225 /* AlamofireDynamic */; };
+		0A2115852C9F2FAA00A64225 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2115842C9F2FAA00A64225 /* HomeView.swift */; };
+		0A2115872C9F320100A64225 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2115862C9F320100A64225 /* ProductDetailView.swift */; };
+		0A21158B2C9F366A00A64225 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21158A2C9F366A00A64225 /* ProductResponse.swift */; };
+		0A21158F2C9F90C000A64225 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21158E2C9F90C000A64225 /* HomePresenter.swift */; };
+		0A2115912C9F919700A64225 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2115902C9F919700A64225 /* VehicleService.swift */; };
 		0A558E5D2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558E5C2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift */; };
 		0A558E5F2C9E10BE0019140C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558E5E2C9E10BE0019140C /* ContentView.swift */; };
 		0A558E612C9E10C10019140C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A558E602C9E10C10019140C /* Assets.xcassets */; };
@@ -34,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2115842C9F2FAA00A64225 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A2115862C9F320100A64225 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		0A21158A2C9F366A00A64225 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		0A21158E2C9F90C000A64225 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0A2115902C9F919700A64225 /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
 		0A558E592C9E10BE0019140C /* ChallengeMercadoPago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMercadoPago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A558E5C2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMercadoPagoApp.swift; sourceTree = "<group>"; };
 		0A558E5E2C9E10BE0019140C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2115802C9F286400A64225 /* Alamofire in Frameworks */,
+				0A2115822C9F286400A64225 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2115882C9F364B00A64225 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0A2115892C9F365400A64225 /* Response */,
+				0A2115902C9F919700A64225 /* VehicleService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0A2115892C9F365400A64225 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				0A21158A2C9F366A00A64225 /* ProductResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		0A21158C2C9F903700A64225 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A2115842C9F2FAA00A64225 /* HomeView.swift */,
+				0A21158E2C9F90C000A64225 /* HomePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A21158D2C9F904B00A64225 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0A2115862C9F320100A64225 /* ProductDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		0A558E502C9E10BE0019140C = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +142,9 @@
 		0A558E5B2C9E10BE0019140C /* ChallengeMercadoPago */ = {
 			isa = PBXGroup;
 			children = (
+				0A21158D2C9F904B00A64225 /* Detail */,
+				0A21158C2C9F903700A64225 /* Home */,
+				0A2115882C9F364B00A64225 /* Networking */,
 				0A558E5C2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift */,
 				0A558E5E2C9E10BE0019140C /* ContentView.swift */,
 				0A558E602C9E10C10019140C /* Assets.xcassets */,
@@ -143,6 +194,10 @@
 			dependencies = (
 			);
 			name = ChallengeMercadoPago;
+			packageProductDependencies = (
+				0A21157F2C9F286400A64225 /* Alamofire */,
+				0A2115812C9F286400A64225 /* AlamofireDynamic */,
+			);
 			productName = ChallengeMercadoPago;
 			productReference = 0A558E592C9E10BE0019140C /* ChallengeMercadoPago.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 0A558E502C9E10BE0019140C;
+			packageReferences = (
+				0A5DFB392C9E39BA00D354AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0A558E5A2C9E10BE0019140C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2115912C9F919700A64225 /* VehicleService.swift in Sources */,
+				0A2115852C9F2FAA00A64225 /* HomeView.swift in Sources */,
+				0A21158B2C9F366A00A64225 /* ProductResponse.swift in Sources */,
+				0A2115872C9F320100A64225 /* ProductDetailView.swift in Sources */,
+				0A21158F2C9F90C000A64225 /* HomePresenter.swift in Sources */,
 				0A558E5F2C9E10BE0019140C /* ContentView.swift in Sources */,
 				0A558E5D2C9E10BE0019140C /* ChallengeMercadoPagoApp.swift in Sources */,
 			);
@@ -588,6 +651,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A5DFB392C9E39BA00D354AA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A21157F2C9F286400A64225 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5DFB392C9E39BA00D354AA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0A2115812C9F286400A64225 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5DFB392C9E39BA00D354AA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A558E512C9E10BE0019140C /* Project object */;
 }

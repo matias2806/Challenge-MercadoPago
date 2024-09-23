@@ -26,22 +26,27 @@ struct HomeView: View {
                 }
                 .padding(.horizontal)
                 List {
-                    if presenter.error != nil {
-                        ListStateView(state: .errorService)
-                    } else if presenter.filteredVehicles.isEmpty {
-                        ListStateView(state: .emptyList)
-                    } else {
-                        ForEach(presenter.filteredVehicles) { product in
-                            NavigationLink(destination: ProductDetailView(presenter: ProductDetailPresenter(vehicle: product))) {
-                                HStack {
-                                    KFImage(URL(string: product.thumbnail.convertToHTTPS())!)
-                                        .resizable()
-                                        .frame(width: 90, height: 90)
-                                        .padding(.trailing)
-                                    
-                                    VStack(alignment: .leading) {
-                                        Text(product.title)
-                                            .font(.headline)
+                    if presenter.isLoading && presenter.vehicles.isEmpty {
+                        LoadingCustomView(loadingText: "Cargando vehículos...")
+                    }
+                    if !presenter.isLoading {
+                        if presenter.error != nil {
+                            ListStateView(state: .errorService)
+                        } else if presenter.filteredVehicles.isEmpty {
+                            ListStateView(state: .emptyList)
+                        } else {
+                            ForEach(presenter.filteredVehicles) { product in
+                                NavigationLink(destination: ProductDetailView(presenter: ProductDetailPresenter(vehicle: product))) {
+                                    HStack {
+                                        KFImage(URL(string: product.thumbnail.convertToHTTPS())!)
+                                            .resizable()
+                                            .frame(width: 90, height: 90)
+                                            .padding(.trailing)
+                                        
+                                        VStack(alignment: .leading) {
+                                            Text(product.title)
+                                                .font(.headline)
+                                        }
                                     }
                                 }
                             }

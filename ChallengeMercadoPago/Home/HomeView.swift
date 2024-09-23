@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HomeView: View {
     @ObservedObject var presenter: HomePresenter
@@ -38,9 +39,9 @@ struct HomeView: View {
                         }) { product in
                             NavigationLink(destination: ProductDetailView(presenter: ProductDetailPresenter(vehicle: product))) {
                                 HStack {
-                                    Image(systemName: "car")
+                                    KFImage(URL(string: product.thumbnail.convertToHTTPS())!)
                                         .resizable()
-                                        .frame(width: 80, height: 80)
+                                        .frame(width: 90, height: 90)
                                         .padding(.trailing)
                                     VStack(alignment: .leading) {
                                         Text(product.title)

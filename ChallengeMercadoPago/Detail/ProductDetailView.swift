@@ -17,7 +17,7 @@ struct ProductDetailView: View {
     
     var body: some View {
         VStack{
-            KFImage(URL(string: loadImage())!)
+            KFImage(URL(string: presenter.vehicle.thumbnail.convertToHTTPS())!)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 180, height: 180)
@@ -56,14 +56,6 @@ struct ProductDetailView: View {
             }
             .padding(.horizontal, 15)
         }
-    }
-    
-    func loadImage() -> String {
-        var imageUrlString = presenter.vehicle.thumbnail
-        if imageUrlString.hasPrefix("http://") {
-            imageUrlString = imageUrlString.replacingOccurrences(of: "http://", with: "https://")
-        }
-        return imageUrlString
     }
 }
 

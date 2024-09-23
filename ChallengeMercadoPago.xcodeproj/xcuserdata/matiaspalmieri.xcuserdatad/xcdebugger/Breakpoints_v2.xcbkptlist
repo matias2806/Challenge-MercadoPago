@@ -14,8 +14,8 @@
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchVehicles(searchText:)"
             landmarkType = "7">
             <Locations>
@@ -62,10 +62,57 @@
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "fetchVehicles(searchText:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "250CD47D-9C0F-46F5-89BA-7D51AC5E0CAD - c894972d021c4b6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "297">
+               </Location>
+               <Location
+                  uuid = "250CD47D-9C0F-46F5-89BA-7D51AC5E0CAD - c894972d021c4b6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "250CD47D-9C0F-46F5-89BA-7D51AC5E0CAD - 4bdb167969bd95c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "94">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,10 +125,105 @@
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "fetchVehicles(searchText:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE1A4EFE-BFB5-4972-82EB-46911F2B8417 - c894972d021c4a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1038">
+               </Location>
+               <Location
+                  uuid = "FE1A4EFE-BFB5-4972-82EB-46911F2B8417 - d81f466532489820"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ChallengeMercadoPago.DeportiveCars) -&gt; Swift.Bool in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "FE1A4EFE-BFB5-4972-82EB-46911F2B8417 - c894972d021c4a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B78876AB-6F3A-44C2-9E4A-642DB9D4A7B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "filteredVehicles"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B78876AB-6F3A-44C2-9E4A-642DB9D4A7B2 - 3304ed6d5de6fceb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeMercadoPago.HomePresenter.filteredVehicles.getter : Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  uuid = "B78876AB-6F3A-44C2-9E4A-642DB9D4A7B2 - 3304ed6d5de6fceb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeMercadoPago.HomePresenter.filteredVehicles.getter : Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "74">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

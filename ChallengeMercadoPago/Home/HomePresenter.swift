@@ -12,7 +12,18 @@ final class HomePresenter: ObservableObject {
     @Published var isLoading = false
     @Published var isEmpty = true
     @Published var error: String? = nil
-
+    @Published var searchText = ""
+    
+    var filteredVehicles: [DeportiveCars] {
+        if searchText.isEmpty {
+            return vehicles
+        } else {
+            return vehicles.filter { vehicle in
+                vehicle.title.lowercased().contains(searchText.lowercased())
+            }
+        }
+    }
+    
     private let vehicleService: VehicleServiceProtocol
 
     init(vehicleService: VehicleServiceProtocol) {

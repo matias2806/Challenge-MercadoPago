@@ -10,39 +10,35 @@ import Kingfisher
 
 struct HomeView: View {
     @ObservedObject var presenter: HomePresenter
-    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    TextField("Buscar vehículos...", text: $searchText)
-                        .foregroundColor(.gray)
-                        .padding(.horizontal)
-                    Button(action: {
-                       presenter.fetchVehicles(searchText: searchText)
-                    }) {
+                VStack {
+                    HStack {
                         Image(systemName: "magnifyingglass")
+                        TextField("Buscar vehículos...", text: $presenter.searchText)
+                            .foregroundColor(.gray)
                     }
+                    .padding()
+                    .background(Color.secondary.opacity(0.15))
+                    .cornerRadius(10)
                 }
-                .padding()
-                .background(Color.secondary.opacity(0.15))
-                .cornerRadius(10)
+                .padding(.horizontal)
                 List {
                     if presenter.error != nil {
                         ListStateView(state: .errorService)
-                    } else if presenter.isEmpty {
+                    } else if presenter.filteredVehicles.isEmpty {
                         ListStateView(state: .emptyList)
                     } else {
-                        ForEach(presenter.vehicles.filter { product in
-                            searchText.isEmpty || product.title.lowercased().contains(searchText.lowercased())
-                        }) { product in
+                        ForEach(presenter.filteredVehicles) { product in
                             NavigationLink(destination: ProductDetailView(presenter: ProductDetailPresenter(vehicle: product))) {
                                 HStack {
                                     KFImage(URL(string: product.thumbnail.convertToHTTPS())!)
                                         .resizable()
                                         .frame(width: 90, height: 90)
                                         .padding(.trailing)
+                                    
                                     VStack(alignment: .leading) {
                                         Text(product.title)
                                             .font(.headline)
@@ -53,7 +49,7 @@ struct HomeView: View {
                     }
                 }
                 .refreshable {
-                    presenter.fetchVehicles(searchText: searchText)
+                    presenter.fetchVehicles(searchText: presenter.searchText)
                 }
             }
             .navigationBarTitleDisplayMode(.large)

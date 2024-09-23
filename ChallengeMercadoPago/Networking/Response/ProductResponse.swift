@@ -203,7 +203,7 @@ struct DeportiveCars: Codable, Identifiable {
 }
 
 // MARK: - Attribute
-struct Attribute: Codable {
+struct Attribute: Codable, Identifiable {
     let id: AttributeID
     let name: Name
     let valueID: String?

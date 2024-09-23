@@ -36,7 +36,7 @@ struct HomeView: View {
                         ForEach(presenter.vehicles.filter { product in
                             searchText.isEmpty || product.title.lowercased().contains(searchText.lowercased())
                         }) { product in
-                            NavigationLink(destination: ProductDetailView(vehicle: product)) {
+                            NavigationLink(destination: ProductDetailView(presenter: ProductDetailPresenter(vehicle: product))) {
                                 HStack {
                                     Image(systemName: "car")
                                         .resizable()
@@ -52,7 +52,7 @@ struct HomeView: View {
                     }
                 }
                 .refreshable {
-                    presenter.fetchVehicles()
+                    presenter.fetchVehicles(searchText: searchText)
                 }
             }
             .navigationBarTitleDisplayMode(.large)

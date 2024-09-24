@@ -29,7 +29,7 @@
 		0A558E642C9E10C10019140C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A558E632C9E10C10019140C /* Preview Assets.xcassets */; };
 		0A558E6E2C9E10C10019140C /* ChallengeMercadoPagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558E6D2C9E10C10019140C /* ChallengeMercadoPagoTests.swift */; };
 		0ACE78BC2CA34BE4002C06E2 /* ProductDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE78BB2CA34BE4002C06E2 /* ProductDetailPresenterTest.swift */; };
-		0ACE78BE2CA36C54002C06E2 /* ejercicio_Mobile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE78BD2CA36C53002C06E2 /* ejercicio_Mobile.pdf */; };
+		0ACE78BE2CA36C54002C06E2 /* consigna.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE78BD2CA36C53002C06E2 /* consigna.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		0A558E692C9E10C10019140C /* ChallengeMercadoPagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMercadoPagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A558E6D2C9E10C10019140C /* ChallengeMercadoPagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMercadoPagoTests.swift; sourceTree = "<group>"; };
 		0ACE78BB2CA34BE4002C06E2 /* ProductDetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailPresenterTest.swift; sourceTree = "<group>"; };
-		0ACE78BD2CA36C53002C06E2 /* ejercicio_Mobile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ejercicio_Mobile.pdf; sourceTree = "<group>"; };
+		0ACE78BD2CA36C53002C06E2 /* consigna.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = consigna.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,7 +223,7 @@
 		0ACE78BF2CA36CAB002C06E2 /* Documentacion */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE78BD2CA36C53002C06E2 /* ejercicio_Mobile.pdf */,
+				0ACE78BD2CA36C53002C06E2 /* consigna.pdf */,
 			);
 			path = Documentacion;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 			files = (
 				0A558E642C9E10C10019140C /* Preview Assets.xcassets in Resources */,
 				0A558E612C9E10C10019140C /* Assets.xcassets in Resources */,
-				0ACE78BE2CA36C54002C06E2 /* ejercicio_Mobile.pdf in Resources */,
+				0ACE78BE2CA36C54002C06E2 /* consigna.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,46 +16,47 @@ struct ProductDetailView: View {
     }
     
     var body: some View {
-        VStack{
-            KFImage(URL(string: presenter.vehicle.thumbnail.convertToHTTPS())!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 180, height: 180)
-                .accessibilityLabel("Imagen del vehículo")
-            Spacer()
-            Text(presenter.vehicle.title)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.primary)
-                .multilineTextAlignment(.center)
-            Text("Precio: \(presenter.vehicle.price) \(presenter.vehicle.currencyID.rawValue)")
-                .font(.largeTitle)
-                .fontWeight(.light)
-                .foregroundColor(.green)
-                .multilineTextAlignment(.center)
-            
-            Spacer()
-            ForEach(presenter.vehicle.attributes) { attribute in
-                HStack {
-                    Text("\(attribute.name.rawValue):")
-                        .fontWeight(.bold)
-                    Text(attribute.valueName)
-                }
+        ScrollView {
+            VStack{
+                KFImage(URL(string: presenter.vehicle.thumbnail.convertToHTTPS())!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 180, height: 180)
+                    .accessibilityLabel("Imagen del vehículo")
+                Spacer()
+                Text(presenter.vehicle.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.center)
+                Text("Precio: \(presenter.vehicle.price) \(presenter.vehicle.currencyID.rawValue)")
+                    .font(.largeTitle)
+                    .fontWeight(.light)
+                    .foregroundColor(.green)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                ForEach(presenter.vehicle.attributes) { attribute in
+                    HStack {
+                        Text("\(attribute.name.rawValue):")
+                            .fontWeight(.bold)
+                        Text(attribute.valueName)
+                    }
+                }                
             }
-            
-            Spacer()
-            Button(action: {
-                presenter.navigateToLink(url: presenter.vehicle.permalink)
-            }) {
-                Text("Ir a la publicación")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
-            .padding(.horizontal, 15)
         }
+        
+        Button(action: {
+            presenter.navigateToLink(url: presenter.vehicle.permalink)
+        }) {
+            Text("Ir a la publicación")
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.blue)
+                .cornerRadius(10)
+        }
+        .padding(.horizontal, 15)
     }
 }
 

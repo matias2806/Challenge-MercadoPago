@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A1BA6B42CA3499400372AD7 /* DeportiveCarMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1BA6B32CA3499400372AD7 /* DeportiveCarMock.swift */; };
-		0A1BA6B62CA349B600372AD7 /* ProductResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1BA6B52CA349B600372AD7 /* ProductResponseMock.swift */; };
 		0A2115802C9F286400A64225 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0A21157F2C9F286400A64225 /* Alamofire */; };
 		0A2115822C9F286400A64225 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2115812C9F286400A64225 /* AlamofireDynamic */; };
 		0A2115852C9F2FAA00A64225 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2115842C9F2FAA00A64225 /* HomeView.swift */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		0A1BA6B32CA3499400372AD7 /* DeportiveCarMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeportiveCarMock.swift; sourceTree = "<group>"; };
-		0A1BA6B52CA349B600372AD7 /* ProductResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponseMock.swift; sourceTree = "<group>"; };
 		0A2115842C9F2FAA00A64225 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0A2115862C9F320100A64225 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		0A21158A2C9F366A00A64225 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				0A1BA6B32CA3499400372AD7 /* DeportiveCarMock.swift */,
-				0A1BA6B52CA349B600372AD7 /* ProductResponseMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				0A54E23C2CA2321F005CE2D4 /* StringExtensionsTest.swift in Sources */,
 				0ACE78BC2CA34BE4002C06E2 /* ProductDetailPresenterTest.swift in Sources */,
 				0A558E6E2C9E10C10019140C /* ChallengeMercadoPagoTests.swift in Sources */,
-				0A1BA6B62CA349B600372AD7 /* ProductResponseMock.swift in Sources */,
 				0A1BA6B42CA3499400372AD7 /* DeportiveCarMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

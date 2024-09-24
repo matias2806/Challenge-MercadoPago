@@ -14,8 +14,8 @@
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "fetchVehicles(searchText:)"
             landmarkType = "7">
             <Locations>
@@ -56,14 +56,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FE1A4EFE-BFB5-4972-82EB-46911F2B8417"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "fetchVehicles(searchText:)"
             landmarkType = "7">
             <Locations>
@@ -112,6 +112,21 @@
                   endingLineNumber = "46"
                   offsetFromSymbolStart = "376">
                </Location>
+               <Location
+                  uuid = "FE1A4EFE-BFB5-4972-82EB-46911F2B8417 - c894972d021c4b6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;, Swift.Error&gt;) -&gt; () in ChallengeMercadoPago.HomePresenter.fetchVehicles(searchText: Swift.String) -&gt; ()"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "376">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -119,14 +134,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B78876AB-6F3A-44C2-9E4A-642DB9D4A7B2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChallengeMercadoPago/Home/HomePresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "filteredVehicles"
             landmarkType = "24">
             <Locations>
@@ -159,6 +174,21 @@
                   startingLineNumber = "19"
                   endingLineNumber = "19"
                   offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "B78876AB-6F3A-44C2-9E4A-642DB9D4A7B2 - 3304ed6d5de6ff35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeMercadoPago.HomePresenter.filteredVehicles.getter : Swift.Array&lt;ChallengeMercadoPago.DeportiveCars&gt;"
+                  moduleName = "ChallengeMercadoPago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matiaspalmieri/Desktop/Challenge-MercadoPago/ChallengeMercadoPago/Home/HomePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -8,6 +8,7 @@
 import Foundation
 
 final class HomePresenter: ObservableObject {
+    private let vehicleService: VehicleServiceProtocol
     @Published var vehicles: [DeportiveCars] = []
     @Published var isLoading = false
     @Published var error: String? = nil
@@ -23,8 +24,6 @@ final class HomePresenter: ObservableObject {
         }
     }
     
-    private let vehicleService: VehicleServiceProtocol
-
     init(vehicleService: VehicleServiceProtocol) {
         self.vehicleService = vehicleService
         fetchVehicles()
@@ -32,7 +31,7 @@ final class HomePresenter: ObservableObject {
     
     func fetchVehicles(searchText: String = "") {
         isLoading = true
-        vehicleService.fetchVehicles { [weak self] result in
+        vehicleService.fetchVehicles(request: VehicleRequest()) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 switch result {

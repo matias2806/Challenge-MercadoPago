@@ -9,13 +9,13 @@ import Foundation
 import Alamofire
 
 protocol VehicleServiceProtocol {
-    func fetchVehicles(completion: @escaping (Result<[DeportiveCars], Error>) -> Void)
+    func fetchVehicles(request: APIRequest, completion: @escaping (Result<[DeportiveCars], Error>) -> Void)
 }
 
 final class VehicleService: VehicleServiceProtocol {
     
-    func fetchVehicles(completion: @escaping (Result<[DeportiveCars], Error>) -> Void) {
-        AF.request("https://api.mercadolibre.com/sites/MLA/search?category=MLA1745")
+    func fetchVehicles(request: APIRequest, completion: @escaping (Result<[DeportiveCars], Error>) -> Void) {
+        AF.request(request.baseURL + request.path, method: request.method, parameters: request.parameters)
             .responseDecodable(of: ProductResponse.self) { response in
                 switch response.result {
                 case .success(let searchResponse):
